@@ -1,0 +1,515 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+  cursor: default;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+  background: url('May\ 22\,\ 2025\,\ 01_19_17\ PM.png') center/cover fixed no-repeat;  
+  height: 100vh;
+  border-bottom: solid #0ff 1px;
+}
+
+.container .title{
+  font-size: 29px;
+  font-weight: 500;
+}
+
+span{
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 255, 255); /* Neon outline */
+  text-shadow: 0 0 5px rgb(19, 218, 218), 0 0 10px rgb(46, 236, 236), 0 0 20px rgb(49, 226, 226), 0 0 40px rgb(9, 165, 165);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.container .head{
+  justify-content: space-between;
+}
+
+.container #nav{
+  max-width: 1800px;
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(5px);
+  border-bottom: solid whitesmoke 1px;
+  box-shadow: 0 0 24px 0 #0ff;
+  padding: 3vh 5vw;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.container #nav a{
+  margin: 0 1vw;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+  position: relative;
+}
+
+.container #nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #0ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.container #nav a:hover::after {
+  width: 100%;
+}
+
+/* head--------------------------------- */
+
+.h-content{
+  margin: 40vh auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.h-content h1{
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 3px white; /* White outline */
+  animation: neonGlow 1s infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px #ddfdf844, 0 0 10px #ffffff5e, 0 0 20px rgba(14, 224, 224, 0.733), 0 0 30px rgba(0, 255, 255, 0.824), 0 0 40px rgba(0, 255, 255, 0.87), 0 0 50px rgba(16, 243, 243, 0.879), 0 0 60px rgba(20, 245, 245, 0.888);
+  }
+  100% {
+    text-shadow: 0 0 5px #ffffff4f, 0 0 15px rgba(14, 250, 250, 0.311), 0 0 25px rgba(12, 243, 243, 0.767), 0 0 35px rgba(9, 219, 219, 0.84), 0 0 45px rgba(0, 255, 255, 0.817), 0 0 55px rgba(12, 233, 233, 0.658), 0 0 65px #0ff;
+  }
+}
+
+.h-content p{
+  font-size: 30px;
+}
+
+/* sections--------------------------------------- */
+
+.sections{
+  background: linear-gradient(45deg, #0f0f0f, #000000, rgb(0, 24, 24)) ;
+  background-attachment: fixed;
+  padding: 4vh 3vw;
+}
+
+/* about----------------------------------------------- */
+
+.about{
+  height: 100vh;
+  border-bottom: solid #0ff 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left img{
+  margin: 0 3vw;
+  border-radius: 100%;
+  height: 70vh;
+  width: auto;
+}
+
+/* Adjusted the soft light neon glow to make it darker */
+.about .left img {
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.about .left img:hover {
+  box-shadow: 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.right{
+  padding: 4vh 2vw;
+  max-width: 793px;
+}
+
+.right h1{
+  margin: 3vh 0;
+  font-size: 59px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #0ff; /* White outline */
+  color: transparent;
+}
+
+.right p{
+  margin: 5vh 0;
+  font-size: 22px;
+}
+
+.right .btn{
+  padding: 1.5vh 3vw;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border: solid #0ff 1px;
+  box-shadow: 0 0 9px 0 rgba(0, 255, 255, 0);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all .6s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.right .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(0, 255, 255);
+  border-radius: 8px;
+  z-index: -1;
+  transition: width 0.5s ease-in-out;
+}
+
+.right .btn:hover::before {
+  width: 100%;
+}
+
+.right .btn:hover{
+  color: black;
+}
+
+/* Reverse Button Design */
+.btn-reverse {
+  padding: 12px 32px;
+  background: transparent;
+  color: #00ffff;
+  border: 1px solid #00ffd5;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255,0,85,0.08);
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.btn-reverse:hover {
+  background: #00ffea;
+  color: #000000;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.18);
+}
+
+/* skills----------------------------------------------- */
+
+.services{
+  padding: 7vh 2vw;
+  height: 100vh;
+  border-bottom: solid #0ff 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services h1{
+  margin: 3vh 0;
+  font-size: 59px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #0ff;
+  color: transparent;
+}
+
+.service-box{
+  margin: auto auto;
+  max-width: 1800px;
+  padding: 4vh 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
+.service-box .box{
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: auto;
+  flex:1;
+  flex-wrap: wrap;
+  margin: 3vh 1vw;
+  padding: 2vh 2vw;
+  background: linear-gradient(45deg, #0f0f0fea, #000000e0, rgba(0, 49, 49, 0.692));
+  border: solid #0ff 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 9px 0 rgba(0, 255, 255, 0.589);
+  justify-content: space-evenly;
+  align-items: center;
+  animation: translateYAnimation 3s infinite ease-in-out;
+}
+
+.service-box .box:nth-child(1) {
+  animation-delay: .5s;
+}
+
+.service-box .box:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.service-box .box:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+/* Add more nth-child selectors if there are more boxes */
+
+@keyframes translateYAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.service-box .box h2{
+  color: #0ff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Style the scroll-to-top button to match the website theme */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
+  border: solid #0ff 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #0ff, 0 0 20px rgba(0, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: .6px #0ff;
+  color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0 0 15px #0ff, 0 0 25px rgba(0, 255, 255, 0.7);
+}
+
+/* Style the gallery section and add hover animation for details */
+.gallery-section {
+  height: 100vh;
+  border-bottom: solid #0ff 1px;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-section h1{
+  margin-top: 5px;
+  font-size: 59px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #0ff;
+  color: transparent;
+}
+
+/* Arrange all gallery items horizontally */
+.gallery {
+  width: 100vw;
+  padding: 4vh 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform .1s ease-in-out;
+}
+
+/* Ensure gallery images fit in their container while maintaining original sizes */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .details {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(1, 63, 63, 0.521) 100%);
+  color: #0ff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.gallery-item:hover .details {
+  bottom: 0;
+}
+
+.gallery-item .details h3{
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: 100;
+  color: #0ff;
+  text-align: center;
+}
+
+/* Contact Section Layout */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.contact .left, .contact .right {
+  flex: 1;
+}
+
+.contact .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.contact .left h1 {
+  margin-top: 5vh;
+  -webkit-text-stroke: 1px rgb(42, 215, 221);
+  color: transparent;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0px;
+}
+
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: solid rgb(0, 225, 255) 2px;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.social-icons a:hover img {
+  box-shadow: #0ff 0 0 10px;
+  transform: scale(1.15) rotate(-8deg);
+  filter: drop-shadow(0 2px 8px rgba(0, 255, 242, 0.096));
+}
+
+/* Contact Form */
+.contact .right h1 {
+  margin-bottom: 18px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cccccc00;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #0f0f0f, #000000, rgba(0, 24, 24, 0.692));
+  color: #0ff;
+  box-shadow: 0 0 9px rgba(0, 255, 255, 0.2);
+  resize: none;
+  transition: border 0.2s;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 1.5px solid #0eeedb;
+  outline: none;
+}
+
+/* Button uses the same .btn class as before */
+.contact-form .btn {
+  width: 14vw;
+  padding: 8px 12px;
+  background: #00eeff00;
+  color: #fff;
+  border: solid #0ff 1px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.274);
+}
+
+.contact-form .btn:hover {
+  color: #fff;
+  background: transparent;
+  box-shadow: 0 6px 18px rgba(0, 238, 255, 0.18);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contact .left, .contact .right {
+    width: 100%;
+  }
+}
