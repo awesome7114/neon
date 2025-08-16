@@ -113,8 +113,7 @@ span{
 /* about----------------------------------------------- */
 
 .about{
-  height: 100vh;
-  border-bottom: solid #0ff 1px;
+  margin: 9vh 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,8 +216,7 @@ span{
 /* skills----------------------------------------------- */
 
 .services{
-  padding: 7vh 2vw;
-  height: 100vh;
+  padding: 9vh 2vw;
   border-bottom: solid #0ff 1px;
   display: flex;
   flex-direction: column;
@@ -325,9 +323,7 @@ span{
 
 /* Style the gallery section and add hover animation for details */
 .gallery-section {
-  height: 100vh;
-  border-bottom: solid #0ff 1px;
-  padding: 2vh 2vw;
+  padding: 4vh 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -371,6 +367,7 @@ span{
 .gallery-item img {
   width: 100%;
   height: 100%;
+  transition: all .7s ease-in-out;
 }
 
 .gallery-item:hover img {
@@ -513,3 +510,4 @@ span{
     width: 100%;
   }
 }
+
