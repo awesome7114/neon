@@ -216,8 +216,7 @@ span{
 /* skills----------------------------------------------- */
 
 .services{
-  padding: 9vh 2vw;
-  border-bottom: solid #0ff 1px;
+  padding: 10vh 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -510,4 +509,5 @@ span{
     width: 100%;
   }
 }
+
 
